@@ -1,0 +1,87 @@
+Een boom van studenten
+
+In deze opdracht programmeer je een Binaire boom. Dit moet je doen door zelf
+
+de link-structuur te implementeren. In de boom worden studenten opgeslagen. De knopen in de 
+
+boom hebben als key het studentnummer van de studenten.
+
+
+
+Voorwaarden:
+
+• Het programma werkt vanaf commandline, dus zonder GUI
+
+• Geen java api gebruiken
+
+Opgave 1. Studenten
+
+1. Maak een Student klasse of pas je student klasse uit de opdracht van week 2 aan. Zorg 
+
+dat deze klasse in ieder geval een student nummer op kan slaan in de vorm van 
+
+”0XXXXXX” en een naam.
+
+Opgave 2. Bomen
+
+Maak een klasse Tree, hierin maak je de volgende methodes:
+
+1. Om de boom te vullen is een methode insert(student) nodig. Deze methode voegt het 
+
+student-object toe aan de boom, zodanig dat de boom zijn binaire zoekeigenschappen 
+
+behoudt.
+
+2. Ook deze keer kunnen er objecten verwijderd worden uit de datastructuur. Schrijf een 
+
+methode remove(studentNummer). Deze methode haalt de student weg uit de boom. 
+
+Let op: De children van de verwijderde node blijven natuurlijk wel in de boom zien.
+
+3. Schijf een methode find(studentNummer). De methode returnt (de referentie naar) de 
+
+student als deze gevonden wordt in de boom.
+
+4. Maak een methode printStudenten(), die de boom in-order afloopt en dus als output de 
+
+studenten geordend op studentnummer teruggeeft.
+
+Opgave 3. Demo
+
+Demonstreer de werking van de boom door:
+
+1. studenten met studentnummers ”0802063” tot en met ”0824836” toe te voegen aan een 
+
+nieuwe, lege boom,
+
+2. de root te verwijderen,
+
+3. de student met studentnummer ”0824837” uit de boom te verwijderen.
+
+Opgave 4. Challenges
+
+De volgende opgaven kunnen je extra punten opleveren, maar zijn niet verplicht.
+
+1. Stel we voegen de volgende studentnummers (2 punten) toe in de boom: 1; 2; 3; 4; 5, in 
+
+die volgorde. De boom wordt dan ongebalanceerd; 1 wordt de root, en de rest van de 
+
+studentnummers komt een–voor–een rechts van zijn voorganger te staan. De methode 
+
+find(object) zal niet meer in O(log(n)) werken, maar neigen naar O(n). Door de boom te 
+
+balanceren voorkom je dit. Bedenk een manier om de boom netjes te balanceren.
+
+2. Een ander probleem is het detecteren wanneer een boom ongebalanceerd is. Een 
+
+veelgebruikte maat hiervoor is het verschil in hoogte van de twee children van een node. 
+
+Als dat verschil groter is dan 1, dan noemen we de boom ongebalanceerd Maak een 
+
+methode isBalanced() die een boolean returnt. 
+
+3. Een tree is eigenlijk een algemene datastructuur; daar stoppen we niet alleen maar 
+
+studenten in. Door gebruik te maken van generieke knopen kan je de boom netjes 
+
+algemeen inzetbaar maken. Implementeer deze generiekere boom.
