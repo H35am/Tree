@@ -24,7 +24,7 @@ public class Tree {
 	/**
 	 * Verwijder een object uit de boom
 	 */
-	public void remove(/*Studentnummer*/){
+	public void remove(Student n){
 		
 	}
 	
@@ -33,7 +33,7 @@ public class Tree {
 	 * Zoek een studentnummer in de boom en return 
 	 * het oject
 	 */
-	public Object find(/*Studentnummer*/){
+	public Object find(Student n){
 		return new Object();
 	}
 	
