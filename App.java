@@ -14,8 +14,20 @@ public class App {
 	public static void main(String[] args) {
 //		Programmeer een paar cases waarbij 
 //		je laat zien dat de boom werkt
-		
-//		voeg studenten met studentnummers Ó0802063Ó tot en met Ó0824836Ó toe
+		Tree tree = new Tree();
+		Student student = new Student(1 , "Kees");
+		Student student1 = new Student(2 , "Jan");
+
+		tree.insert(student);
+		tree.insert(student1);
+
+		Student findStudent = tree.find(2);
+
+		System.out.print(findStudent.toString());
+
+
+
+//		voeg studenten met studentnummers ï¿½0802063ï¿½ tot en met ï¿½0824836ï¿½ toe
 		
 //		Verwijder de root
 		

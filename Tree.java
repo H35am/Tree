@@ -78,12 +78,12 @@ public class Tree {
 	 * Zoek een studentnummer in de boom en return 
 	 * het oject
 	 */
-	public Student find(Student n){
+	public Student find(int studentnummer){
 		Node focusNode = root;
 
-		while(focusNode.key != n.studentnummer)
+		while(focusNode.key != studentnummer)
 		{
-			if(n.studentnummer < focusNode.key)
+			if(studentnummer < focusNode.key)
 				focusNode = focusNode.leftChild;
 			else
 				focusNode = focusNode.rightChild;
@@ -94,11 +94,12 @@ public class Tree {
 
 		return new Student(focusNode.key,focusNode.name);
 	}
-	
+
+	//Vraag
 	public boolean isBalanced(){
 		return false;//dummy
 	}
-	
+	//Vraag
 	public void balance(){
 		
 	}
